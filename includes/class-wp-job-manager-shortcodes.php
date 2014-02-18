@@ -107,10 +107,10 @@ class WP_Job_Manager_Shortcodes {
 	public function job_dashboard( $atts ) {
 		global $job_manager;
 
-		if ( ! is_user_logged_in() ) {
-			_e( 'You need to be signed in to manage your job listings.', 'wp-job-manager' );
-			return;
-		}
+		// if ( ! is_user_logged_in() ) {
+		// 	_e( 'You need to be signed in to manage your job listings.', 'wp-job-manager' );
+		// 	return;
+		// }
 
 		extract( shortcode_atts( array(
 			'posts_per_page' => '25',

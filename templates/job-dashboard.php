@@ -22,7 +22,7 @@
 								<?php echo $job->post_title; ?>
 							<?php endif; ?>
 						</td>
-						<td class="date"><?php echo date_i18n( get_option( 'date_format' ), strtotime( $job->post_date ) ); ?></td>
+						<td class="date"><?php the_job_location( $job ); ?><?php echo date_i18n( get_option( 'date_format' ), strtotime( $job->post_date ) ); ?></td>
 					</tr>
 				<?php endforeach; ?>
 			<?php endif; ?>
